@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        form {
+            color: white;
+            font-size: 4rem;
+            background-color: rgba(3, 3, 3, 0.4);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('./Golden-Chariot-Train-India-0517.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        #gold {
+            color: gold;
+        }
+
+        button {
+            color: white;
+            background-color: palevioletred;
+            display: block;
+            width: 50%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10px;
+        }
+
+        input {
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="pnr-ip">
+        <h6><span id="gold">Welcome aboard!</span> Please Enter your pnr number to continue</h6>
+        <input type="number" name="pnr" id="pnr" placeholder="12345">
+        <button onclick="showLink">Enter</button>
+        <p><a href="./passenger.html">Go to dashboard</a></p>
+        <a href="./passenger.html" id="link"></a>
+    </form>
+    <script>
+        function showLink() {
+            const ip = document.querySelector('input')
+            const value = this.value
+            console.log(value);
+            console.log(typeof(value));
+            if (typeof (value) == Number) {
+                const link = document.querySelector("#link")
+                link.innerText = 'Verification Successful! go to dashboard'
+            }
+        }
+    </script>
+</body>
+
+</html>

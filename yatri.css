@@ -1,0 +1,21 @@
+.container {
+    background-image: url('./golden-chariot04.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 99vh;
+    color: white;
+}
+article{
+    margin-top: 50px;
+}
+table,th,td{
+    border: 1px solid red;
+    padding: 5px;
+}
+table{
+    margin-top: 25px;
+    background-color: black;
+}
+th{
+    margin: 10px;
+}

@@ -1,0 +1,33 @@
+.container {
+    display : grid;
+    grid-template-rows:100px: 
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.total-count {
+    color: rgb(31, 31, 175);
+}
+h4{
+    color: orange;
+}
+body {
+    font-size: 2rem;
+    background-color: rgb(171, 233, 233);
+}
+.header {
+    color: white;
+    background-color: rgb(69, 111, 240);
+    font-size: 1.5rem;
+}
+.date {
+    color: orange;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    color: orangered;
+}

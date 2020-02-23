@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatri Assistant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="yatri.css">
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        <header>
+            <h1 class="flex-center title has-text-white">Yatri Assistance</h1>
+        </header>
+        <main>
+            <article class="greeter flex-center">
+                <h2>Welcome aboard, Amith Tony</h2>
+                <h3>PNR : 12345678</h3>
+            </article>
+            <article class="amn">
+                <h4 class="amn-header">
+                    Amneties Provided To You:
+                </h4>
+                <table class="amns" align="center">
+                    <tr >
+                        <th class="has-text-white">Serial No</th>
+                        <th class="has-text-white   ">Item</th>
+                        <th class="has-text-white">Washed</th>
+                        <th class="has-text-white">Report</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mattress</td>
+                        <td>Yes</td>
+                        <td><button>Missing?</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mattress</td>
+                        <td>No</td>
+                        <td><button>Missing?</button>
+                            <button id="replace">Request Replacement</button>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </main>
+    </div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyApoHditNkQomnbAi6hPWUOJp9bSYK1qBs",
+            authDomain: "rail-rfid.firebaseapp.com",
+            databaseURL: "https://rail-rfid.firebaseio.com",
+            projectId: "rail-rfid",
+            storageBucket: "rail-rfid.appspot.com",
+            messagingSenderId: "962581329886",
+            appId: "1:962581329886:web:374f25f1be6da3d334cf4f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+    </script>
+    <script src="passenger.js
+    "></script>
+</body>
+
+</html>

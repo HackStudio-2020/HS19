@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header flex-center">Admin Dashboard</h1>
+        <h4 class="flex-center live-count">Assets Live Count : <span class="total-count"></span></h4>
+        
+        <div class="status flex-center">
+            <h3 class="status-bar ">Status</h3>
+            <article class="mattresses ">
+                <h4>Mattresses: </h4>
+                <h5>Total : <span class="total-count">3</span> Marked Safe as of:</h5>
+                <h6 class="date"></h6> 
+            </article>
+            <button>
+                Verify Manually
+            </button>
+        </div> 
+        <div class="alert-area"></div>  
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyApoHditNkQomnbAi6hPWUOJp9bSYK1qBs",
+            authDomain: "rail-rfid.firebaseapp.com",
+            databaseURL: "https://rail-rfid.firebaseio.com",
+            projectId: "rail-rfid",
+            storageBucket: "rail-rfid.appspot.com",
+            messagingSenderId: "962581329886",
+            appId: "1:962581329886:web:374f25f1be6da3d334cf4f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+    </script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</body>
+
+</html>
